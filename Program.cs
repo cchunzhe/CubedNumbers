@@ -28,7 +28,7 @@ namespace CubedNumbers
             int x = rand.Next(1, 100);
             int cubed = x * x * x;
 
-            Console.Write("What is the cube root of {0} ", cubed);
+            Console.Write("What is the cube root of {0}: ", cubed);
             int userAnswer = GetUserInput();
 
             do
