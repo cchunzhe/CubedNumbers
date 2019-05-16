@@ -11,6 +11,8 @@ namespace CubedNumbers
         static void Main(string[] args)
         {
             Console.Title = "Cubed Numbers";
+            Console.WriteLine("This program will generate numbers which have a perfect cube.");
+            Console.WriteLine("Source code at https://www.github.com/cchunzhe/CubedNumbers");
             bool repeat = true;
             do
             {
@@ -26,7 +28,7 @@ namespace CubedNumbers
             int x = rand.Next(1, 100);
             int cubed = x * x * x;
 
-            Console.Write("What is the cube root of " + cubed + ": ");
+            Console.Write("What is the cube root of {0} ", cubed);
             int userAnswer = GetUserInput();
 
             do
@@ -46,7 +48,7 @@ namespace CubedNumbers
 
         static int GetUserInput()
         {
-            int answer = 0;
+            int answer = 69;
             string userInput = Console.ReadLine();
             try
             {
